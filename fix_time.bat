@@ -1,5 +1,6 @@
 @echo off
-echo Run this script from your domain controller. (Exit to cancel.)
+echo Run this script from your domain controller.
+echo Press any key to continue.
 pause
 w32tm /config /syncfromflags:manual /manualpeerlist:pool.ntp.org
 w32tm /config /reliable:yes
